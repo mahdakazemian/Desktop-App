@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop4", "Workshop4\Workshop4.csproj", "{EDAEC4DD-F0AC-4752-B958-335108D24CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassEntites", "ClassEntites\ClassEntites.csproj", "{07487E91-B720-45DF-8DEC-4E8E51B437F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBAccess", "DBAccess\DBAccess.csproj", "{F740F92B-07F4-4428-A5FE-D77ECE566699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDAEC4DD-F0AC-4752-B958-335108D24CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAEC4DD-F0AC-4752-B958-335108D24CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAEC4DD-F0AC-4752-B958-335108D24CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAEC4DD-F0AC-4752-B958-335108D24CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07487E91-B720-45DF-8DEC-4E8E51B437F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07487E91-B720-45DF-8DEC-4E8E51B437F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07487E91-B720-45DF-8DEC-4E8E51B437F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07487E91-B720-45DF-8DEC-4E8E51B437F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F740F92B-07F4-4428-A5FE-D77ECE566699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F740F92B-07F4-4428-A5FE-D77ECE566699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F740F92B-07F4-4428-A5FE-D77ECE566699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F740F92B-07F4-4428-A5FE-D77ECE566699}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58243579-053C-402E-907E-06A0FCBD90A3}
+	EndGlobalSection
+EndGlobal

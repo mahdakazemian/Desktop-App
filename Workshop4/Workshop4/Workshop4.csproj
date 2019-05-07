@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDAEC4DD-F0AC-4752-B958-335108D24CAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Workshop4</RootNamespace>
+    <AssemblyName>Workshop4</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgentButton.Designer.cs">
+      <DependentUpon>AgentButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPackages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPackages.Designer.cs">
+      <DependentUpon>frmAddPackages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgtInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgtInfo.Designer.cs">
+      <DependentUpon>frmAgtInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPackage.Designer.cs">
+      <DependentUpon>frmPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProducts.Designer.cs">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuppliers.Designer.cs">
+      <DependentUpon>frmSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdatePackages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdatePackages.Designer.cs">
+      <DependentUpon>frmUpdatePackages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeButton.Designer.cs">
+      <DependentUpon>HomeButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiHelper.cs" />
+    <Compile Include="PackageButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PackageButton.Designer.cs">
+      <DependentUpon>PackageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductButton.Designer.cs">
+      <DependentUpon>ProductButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsSupplierForm.Designer.cs">
+      <DependentUpon>ProductsSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageMainForm.Designer.cs">
+      <DependentUpon>PackageMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageSecondForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageSecondForm.Designer.cs">
+      <DependentUpon>PackageSecondForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupplierButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SupplierButton.Designer.cs">
+      <DependentUpon>SupplierButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validator.cs" />
+    <EmbeddedResource Include="AgentButton.resx">
+      <DependentUpon>AgentButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPackages.resx">
+      <DependentUpon>frmAddPackages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgtInfo.resx">
+      <DependentUpon>frmAgtInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPackage.resx">
+      <DependentUpon>frmPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProducts.resx">
+      <DependentUpon>frmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuppliers.resx">
+      <DependentUpon>frmSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdatePackages.resx">
+      <DependentUpon>frmUpdatePackages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeButton.resx">
+      <DependentUpon>HomeButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageButton.resx">
+      <DependentUpon>PackageButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductButton.resx">
+      <DependentUpon>ProductButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsSupplierForm.resx">
+      <DependentUpon>ProductsSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageMainForm.resx">
+      <DependentUpon>PackageMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackageSecondForm.resx">
+      <DependentUpon>PackageSecondForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SupplierButton.resx">
+      <DependentUpon>SupplierButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\ClassEntites.Agent.datasource" />
+    <None Include="Properties\DataSources\ClassEntites.Package.datasource" />
+    <None Include="Properties\DataSources\ClassEntites.Product.datasource" />
+    <None Include="Properties\DataSources\ClassEntites.ProductsSupplier.datasource" />
+    <None Include="Properties\DataSources\ClassEntites.ProductSupplierViewModel.datasource" />
+    <None Include="Properties\DataSources\ClassEntites.Supplier.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassEntites\ClassEntites.csproj">
+      <Project>{07487e91-b720-45df-8dec-4e8e51b437f8}</Project>
+      <Name>ClassEntites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBAccess\DBAccess.csproj">
+      <Project>{f740f92b-07f4-4428-a5fe-d77ece566699}</Project>
+      <Name>DBAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\download-removebg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
